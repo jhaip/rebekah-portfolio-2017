@@ -90,9 +90,19 @@ $(".nav-link--about").click(function() {
   $(".text-page-container--about").addClass("is-open");
 });
 
+$(".nav-link--gallery").click(function() {
+  $(".text-page-container.is-open").removeClass("is-open");
+  hide_nav();
+  $(".text-page-container--gallery").addClass("is-open");
+});
+
 $(".image").one("load", function() {
   $(this).addClass("loaded");
 }).each(function() {
   console.log(this.complete);
   if(this.complete) $(this).addClass("loaded"); // $(this).load();
 });
+
+setTimeout(function() {
+  $(".text").addClass("loaded");
+}, 500);

@@ -96,7 +96,7 @@ body {
   box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.6);
 }
 .image-1 {
-  top: -10%;
+  top: -45%;
   left: -40%;
 }
 .image-2 {
@@ -104,8 +104,8 @@ body {
   left: 115%;
 }
 .image-3 {
-  top: 20%;
-  left: 60%;
+  top: -7%;
+  left: 69%;
 }
 .image-4 {
   top: -50px;
@@ -141,6 +141,36 @@ body {
   top: 90%;
   left: 23%;
 }
+.image-12 {
+  top: 20%;
+  left: 60%;
+  height: 60%
+}
+.image-13 {
+  top: -10%;
+  left: -34%;
+  height: 50%;
+}
+.image-14 {
+  top: 126%;
+  left: 44%;
+  height: 60%;
+}
+.image-15 {
+  top: 92%;
+  left: 99%;
+  height: 20%;
+}
+.image-16 {
+  top: -5%;
+  left: 91%;
+  height: 20%;
+}
+.image-17 {
+  top: 46%;
+  left: -5%;
+  height: 20%;
+}
 .button {
   z-index: 100;
 }
@@ -174,15 +204,22 @@ body {
   transform: rotateZ(100deg);
 }
 
-.text {
+/* .text {
   position: absolute;
   line-height: 34px;
   font-size: 16px;
   color: #1a1a1a;
   padding: 40px 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Georgia, cursive, sans-serif;
   background-color: #ccae3c;
   z-index: 102;
+  transition: all 0.2s ease;
+  opacity: 0;
+  transform: scale(1.1);
+}
+.text.loaded {
+  opacity: 1;
+  transform: scale(1);
 }
 .text:hover {
   cursor: pointer;
@@ -216,7 +253,7 @@ body {
   background-color: #2F2831;
   color: #F2EFDD;
   padding: 40px;
-}
+} */
 
 
 .page {
@@ -262,12 +299,17 @@ body {
   width: 100vw;
   height: 0;
   overflow: scroll;
-  background-color: #B7AFA2;
+  background-color: #2F2831;
+  color: white;
   transition: all 0.5s ease;
   padding-right: 240px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+.text-page-container--about {
+  background-color: #222434;
+  color: white;
 }
 .text-page-container.is-open {
   height: 100vh;
@@ -285,6 +327,18 @@ body {
   font-size: 28px;
   margin-top: 12px;
   margin-bottom: 40px;
+}
+
+.gallery-image {
+  width: 100%;
+}
+.text-page-container--gallery .text-page {
+  max-width: 600px;
+}
+.text-page-container--gallery h4 {
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 @media (max-width: 800px) {
